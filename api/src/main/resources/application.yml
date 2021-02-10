@@ -1,0 +1,10 @@
+# TODO enable flyway and create a DB?
+spring:
+  flyway:
+    enabled: false
+graphql:
+  packages:
+    - com.xunfos.eventplayground.api.model
+  playground:
+    enabled: true
+
