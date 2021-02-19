@@ -6,53 +6,79 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root MuiPaper-outlined MuiPaper-rounded"
       >
-        <p
-          class="MuiTypography-root MuiTypography-body1"
+        <div
+          class="MuiCardContent-root"
         >
-          Hello! I am an event card
+          <h2
+            class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
+          >
+            Some title
+          </h2>
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+          >
+            Some description
+          </p>
+        </div>
+        <div
+          class="MuiCardActions-root action MuiCardActions-spacing"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Im interested!
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiPaper-root MuiCard-root MuiPaper-outlined MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
+        >
+          Some title
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom"
+        >
+          Some description
         </p>
+      </div>
+      <div
+        class="MuiCardActions-root action MuiCardActions-spacing"
+      >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
           tabindex="0"
           type="button"
         >
           <span
             class="MuiButton-label"
           >
-            Sample Button
+            Im interested!
           </span>
           <span
             class="MuiTouchRipple-root"
           />
         </button>
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
-    >
-      <p
-        class="MuiTypography-root MuiTypography-body1"
-      >
-        Hello! I am an event card
-      </p>
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label"
-        >
-          Sample Button
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
     </div>
   </div>,
   "debug": [Function],

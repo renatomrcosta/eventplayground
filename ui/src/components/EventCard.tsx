@@ -1,17 +1,40 @@
+import styles from "./EventCard.module.scss";
 import React from "react";
-import { Card, Button, Typography } from "@material-ui/core";
+import {
+  Button,
+  Typography,
+  Container,
+  Card,
+  CardContent,
+  CardActions,
+} from "@material-ui/core";
 
 export interface Props {
+  title: string;
+  description: string;
   onClick?: () => void;
 }
 
-export const EventCard: React.FC<Props> = ({ onClick }) => {
+export const EventCard: React.FC<Props> = ({ onClick, title, description }) => {
   return (
-    <Card>
-      <Typography>Hello! I am an event card</Typography>
-      <Button color={"secondary"} onClick={() => onClick && onClick()}>
-        Sample Button
-      </Button>
+    <Card variant="outlined">
+      <CardContent>
+        <Typography variant="h2" gutterBottom>
+          {title}
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          {description}
+        </Typography>
+      </CardContent>
+      <CardActions className={styles.action}>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => onClick && onClick()}
+        >
+          Im interested!
+        </Button>
+      </CardActions>
     </Card>
   );
 };
