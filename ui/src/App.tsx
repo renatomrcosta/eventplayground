@@ -7,9 +7,6 @@ import { SampleRoute } from "./containers/SampleRoute";
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
       <Router>
         <Link to="/sample">Sample Route</Link>
         <Switch>
