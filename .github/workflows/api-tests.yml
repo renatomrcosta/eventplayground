@@ -15,6 +15,10 @@ jobs:
           java-version: 15
       - uses: eskatos/gradle-command-action@v1
         with:
+          wrapper-cache-enabled: true
           build-root-directory: /api
           wrapper-directory: /api
+          dependencies-cache-enabled: true
+          dependencies-cache-key: gradle/dependency-locks/**
+          dependencies-cache-exact: true
           arguments: check --scan
