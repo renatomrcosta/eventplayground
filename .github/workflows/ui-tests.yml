@@ -1,6 +1,6 @@
-name: CI
+name: UI-tests
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -15,6 +15,3 @@ jobs:
 
       - name: UI Tests
         run: make test-ui
-
-      - name: API Tests
-        run: make test-api
