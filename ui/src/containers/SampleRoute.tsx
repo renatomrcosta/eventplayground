@@ -7,7 +7,7 @@ export const SampleRoute: React.FC = () => {
 
   useEffect(() => {
     EventService.getEventData().then((data) => setEvents(data));
-  }, []);
+  }, [events]);
 
   return (
     <>
