@@ -16,9 +16,8 @@ jobs:
       - uses: eskatos/gradle-command-action@v1
         with:
           wrapper-cache-enabled: true
-          gradle-executable: /api
+          gradle-executable: /api/gradlew
           build-root-directory: /api
-          wrapper-directory: /api
           dependencies-cache-enabled: true
           dependencies-cache-key: gradle/dependency-locks/**
           dependencies-cache-exact: true
