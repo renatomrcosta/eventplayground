@@ -8,8 +8,8 @@ import java.util.UUID
 @Component
 class EventQuery : Query {
     fun listEvents(): List<Event> = listOf(
-        Event(id = ID(UUID.randomUUID().toString()), name = "Random Name #1"),
-        Event(id = ID(UUID.randomUUID().toString()), name = "Random Name #2"),
-        Event(id = ID(UUID.randomUUID().toString()), name = "Random Name #3"),
+        Event(id = ID(UUID.randomUUID().toString()), title = "Random Name #1"),
+        Event(id = ID(UUID.randomUUID().toString()), title = "Random Name #2"),
+        Event(id = ID(UUID.randomUUID().toString()), title = "Random Name #3"),
     )
 }
