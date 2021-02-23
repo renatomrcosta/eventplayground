@@ -1,17 +1,17 @@
-name: UI-tests
+#name: UI-tests
 
-on: [push, pull_request]
+#on: [push, pull_request]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+#    steps:
+#      - uses: actions/checkout@v2
+#      - uses: actions/setup-node@v1
 
-      - name: Install dependencies
-        run: make install-ci-deps
+#      - name: Install dependencies
+#        run: make install-ci-deps
 
-      - name: UI Tests
-        run: make test-ui
+#      - name: UI Tests
+#        run: make test-ui
