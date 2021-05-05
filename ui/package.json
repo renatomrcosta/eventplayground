@@ -50,7 +50,7 @@
   "devDependencies": {
     "@types/enzyme": "3.10.8",
     "@types/enzyme-adapter-react-16": "1.0.6",
-    "@types/react-router": "5.1.11",
+    "@types/react-router": "5.1.14",
     "@types/react-router-dom": "5.1.7",
     "@typescript-eslint/eslint-plugin": "4.15.2",
     "@typescript-eslint/parser": "4.15.2",
